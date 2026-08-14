@@ -56,7 +56,7 @@ class Ticket:
                 f"{self.prioridad} | Estado: {self._status} | "
                 f"Solicitante: {self.solicitante.nombre} | Tecnico: {tecnico_str}")
 
-
+# Crea usuarios y tickets de prueba, y demuestra el flujo completo
 def main():
     # Crear dos usuarios
     usuario1 = Usuario(1, "Ana Lopez", "ana@correo.com", "solicitante")
