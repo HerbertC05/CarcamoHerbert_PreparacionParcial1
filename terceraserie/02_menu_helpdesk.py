@@ -123,7 +123,7 @@ def mostrar_resumen_por_prioridad():
     print(f"Total: {len(tickets)} ticket(s)")
     print("------------------------------\n")
 
-
+# Bucle principal del programa: controla el flujo del menu con while
 def ejecutar_menu():
     """Bucle principal que ejecuta el menu hasta que el usuario decida salir."""
     while True:
