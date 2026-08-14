@@ -18,7 +18,7 @@ def pedir_numero_ticket():
         except ValueError:
             print("Error: el numero de ticket debe ser un valor entero. Intente de nuevo.")
 
-
+# Valida que los campos de texto no queden vacios
 def pedir_texto_obligatorio(mensaje):
     """Solicita un campo de texto y rechaza valores vacios."""
     while True:
