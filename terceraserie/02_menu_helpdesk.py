@@ -90,7 +90,7 @@ def listar_tickets():
         )
     print("------------------------\n")
 
-
+# Busca tickets por solicitante sin distinguir mayusculas/minusculas
 def buscar_por_solicitante():
     """Busca tickets cuyo solicitante coincida (sin distinguir mayusculas/minusculas)."""
     nombre = input("Nombre del solicitante a buscar: ").strip().lower()
