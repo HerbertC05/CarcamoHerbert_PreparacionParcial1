@@ -109,7 +109,7 @@ def buscar_por_solicitante():
         print(f"#{t['numero']} | {t['titulo']} | {t['prioridad']} | {t['status']}")
     print("-----------------------------\n")
 
-
+# Cuenta y resume los tickets registrados agrupados por prioridad
 def mostrar_resumen_por_prioridad():
     """Cuenta y muestra cuantos tickets hay por cada nivel de prioridad."""
     conteo = {"Low": 0, "Medium": 0, "High": 0, "Critical": 0}
