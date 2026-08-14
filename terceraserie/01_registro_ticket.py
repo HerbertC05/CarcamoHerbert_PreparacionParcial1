@@ -68,7 +68,7 @@ def registrar_ticket():
     }
     return ticket
 
-
+# Muestra el resumen final del ticket registrado usando f-strings
 def mostrar_resumen(ticket):
     """Muestra un resumen del ticket registrado usando f-strings."""
     print("\n--- Resumen del ticket registrado ---")
