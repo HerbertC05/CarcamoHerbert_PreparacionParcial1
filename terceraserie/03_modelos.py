@@ -40,7 +40,7 @@ class Ticket:
             return False
         self._status = nuevo_estado
         return True
-
+# Asigna un tecnico al ticket solo si su rol es 'technician'
     def asignar_tecnico(self, tecnico):
         """Asigna un tecnico al ticket, validando que su rol sea 'technician'."""
         if tecnico.rol != "technician":
