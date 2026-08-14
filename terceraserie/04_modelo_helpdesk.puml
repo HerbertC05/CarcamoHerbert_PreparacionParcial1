@@ -1,0 +1,54 @@
+@startuml HelpDesk_EDU_Modelo
+
+class User {
+  - id : int
+  - nombre : str
+  - email : str
+  - rol : str
+  + __init__(id, nombre, email, rol)
+  + __str__() : str
+}
+
+class Ticket {
+  - id : int
+  - titulo : str
+  - categoria : str
+  - prioridad : str
+  - _status : str
+  + __init__(id, titulo, categoria, prioridad, solicitante)
+  + cambiar_estado(nuevo_estado)
+  + asignar_tecnico(tecnico)
+}
+
+class Comment {
+  - id : int
+  - texto : str
+  - fecha : str
+  + __init__(id, texto, fecha, autor)
+}
+
+class History {
+  - id : int
+  - accion : str
+  - fecha : str
+  + __init__(id, accion, fecha)
+  + registrar_cambio(accion)
+}
+
+class Article {
+  - id : int
+  - titulo : str
+  - contenido : str
+  + __init__(id, titulo, contenido, autor)
+}
+
+' Asociaciones simples
+User "1" -- "0..*" Ticket : solicita >
+User "0..1" -- "0..*" Ticket : atiende >
+User "1" -- "0..*" Article : publica >
+
+' Composiciones (rombo negro del lado del "todo": Ticket)
+Ticket "1" *-- "0..*" Comment : contiene >
+Ticket "1" *-- "0..*" History : registra >
+
+@enduml
