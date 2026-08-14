@@ -31,7 +31,7 @@ class Ticket:
         self.solicitante = solicitante  # objeto Usuario
         self.tecnico = None  # objeto Usuario opcional
         self._status = "Open"  # estado encapsulado
-
+# Cambia el estado del ticket solo si es un estado valido de la lista
     def cambiar_estado(self, nuevo_estado):
         """Cambia el estado del ticket si es un estado valido."""
         if nuevo_estado not in ESTADOS_VALIDOS:
