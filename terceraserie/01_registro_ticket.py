@@ -28,6 +28,7 @@ def pedir_texto_obligatorio(mensaje):
         else:
             return valor
 
+# Valida que la categoria este dentro de las opciones permitidas
 
 def pedir_categoria():
     """Solicita la categoria y valida contra la lista de categorias validas."""
