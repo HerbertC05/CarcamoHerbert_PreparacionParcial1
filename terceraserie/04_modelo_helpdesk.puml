@@ -1,5 +1,5 @@
 @startuml HelpDesk_EDU_Modelo
-
+' Diagrama verificado: rombos negros del lado de Ticket (composicion)
 class User {
   - id : int
   - nombre : str
